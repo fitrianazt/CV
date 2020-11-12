@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+header {
+    background: url('asset/bg2.jpg') no-repeat;
+    background-color:#df985b;
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+}
+
+header .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header .wrapper h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: 0 4px 0px #df985b;
+    margin-bottom: 40px;
+}
+
+header .wrapper img{
+    border-radius: 20%;
+    border: 5px solid white; 
+    box-shadow: 0 20px 35px 0px rgba(0, 0, 0, 7);
+    width: 50%;
+    transition: transform .5s ease-out;
+    cursor: pointer; 
+}
+
+header .wrapper img:hover{
+    transform: scale(1.1);
+}
+
+header .wrapper ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header .wrapper ul li a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-shadow: 0 3px 0px #df985b;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+ /* transition: border-bottom .5s ease-in-out; */
+}
+
+header .wrapper ul li a:hover{
+   border-bottom: 5px solid #df985b;
+}
+
+.tentang-saya {
+    background:#df985b;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.tentang-saya .wrapper h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: 0 4px 0px black;
+    border-bottom: 4px solid white;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 40px;
+}
+.tentang-saya .wrapper p {
+    text-shadow: 0 2.5px 0px black;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 30px;
+    margin-bottom: 60px;
+}
+
+.tentang-saya .wrapper a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    padding: 10px 30px;
+    border: 7px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.skill {
+    background:#aa6e3a;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-shadow: 0 4px 0px black;
+    align-items: center;
+
+}
+
+.skill .wrapper {
+    width: 80%;
+}
+
+.skill .wrapper h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 5px solid white;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+}
+
+.skill .wrapper-skill {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.skill .wrapper-skill h5 {
+    text-transform: uppercase;
+    text-shadow: 0 2px 0px black;
+    font-size: 18px;
+}
+
+.skill .wrapper-skill .background {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: white;
+}
+
+.skill .wrapper-skill .background .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    background: rgb(160, 141, 140);
+    z-index: 2;
+}
+
+.indicator.creativity {
+    width: 90%;
+}
+
+.indicator.copywriting {
+    width: 85%;
+}
+
+.indicator.editing {
+    width: 70%;
+}
+
+.indicator.teamwork {
+    width: 100%;
+}
+
+.prestasi {
+    background: #df985b;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prestasi .wrapper h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: 0 4px 0px black;
+    border-bottom: 4px solid white;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 40px;
+}
+
+.prestasi .wrapper .wrapper-prestasi{
+    display: grid;
+    grid-gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.wrapper-prestasi h5 {
+    color: white;
+    font-size: 0,5rem;
+    text-shadow: 0 2px 0px black;
+}
+
+footer{
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.kontak {
+    background: #aa6e3a;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontak .wrapper h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-bottom: 5px solid white;
+    display: inline-block;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
+    text-shadow: 0 4px 0px black;
+}
+
+.wrapper-kontak h6 {
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 2px 0px black;
+}
